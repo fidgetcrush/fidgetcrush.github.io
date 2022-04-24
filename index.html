@@ -1,0 +1,114 @@
+<!--
+CandyCrush
+Your Name: Edward Hughes
+Collaborators: nobody
+-->
+<!DOCTYPE html>
+<html>
+<!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Fidget Crush</title>
+		
+		<!-- Load style sheets -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/mainLayout.css">
+		<link rel="stylesheet" href="css/progress.css">
+		
+		<!-- Use mobile-aware viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Load any supplemental Javascript libraries here -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/seedrandom.js"></script>
+		<script src="js/candy.js"></script>
+		<script src="js/board.js"></script>
+		<script src="js/rules.js"></script>
+		<script src="js/handler.js"></script>
+	</head>
+
+	<body>
+		<center>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="firstColumn">
+					<center>
+					<div class="title">
+						<img class="titleImg" src="image/title.png">
+					</div>
+					<table border="0" class="menu">
+					<tbody>
+					  <tr>
+					    <td>
+					    	<!--<input class="btn btn-default" type="button" id="newGame" value="clear" style="width: 100px; height: 100px;">-->
+					    	<div class="btn btn-default">
+					    		<img class="" src="image/clear.png" id="newGame" value="clear" style="width: 60px;">
+					    	</div>
+					    </td>
+					    <td>
+					    	<div class="hintBox">
+							<button class="progressBtn hint btn" data-api="plugin-progressBtn" id="showMove" style="width: 80px; height: 80px;" disabled>
+								<img class="" src="image/hint.png"id="showMove"  style="width: 60px;">
+							</button>
+							</div>
+					    </td>
+					    <td>
+					    	<div class="candyBox">
+					    		<img class="candyIcon" id="candyIcon">
+					    	</div>
+					    	<!--<img id="candyIcon">-->
+		
+					    </td>
+					  </tr>
+
+					</tbody>
+					</table>
+					</center>
+				</div>
+				
+				<div class="col-md-12" id="mainColumn">
+					<div id="cover"></div>
+					<div id="gameBoard"></div>
+					<canvas id="canvas" width="320" height="320">
+					<!--<canvas id="canvas" style="width:100%; height: 100%;">-->
+						<p>Canvas not supported on your browser.</p>
+					</canvas>
+				</div>
+
+				<div class="col-md-12" id="">
+					<center>
+					<div class="scoreBox" id="scoreBox">
+					    <label class="scoreLabel" id="scoreLabel"></label>
+					</div>
+					</center>
+				</div>
+
+
+
+				<div class="col-md-12" id="lastColumn">
+
+					<script src="https://ads-partners.coupang.com/g.js"></script>
+					<script>
+						new PartnersCoupang.G({"id":578312,"template":"carousel","trackingCode":"AF4402510","width":"320","height":"50"});
+					</script>
+					<div class="adlabel">이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br> 이에 따른 일정액의 수수료를 제공받습니다.</div>
+				</div>
+
+				
+			</div> <!-- class="row" -->
+		</div> <!-- class="container" -->
+	</center>
+
+	
+	</body>
+
+	<script src="js/progressBtn.js"></script>
+	<script src="js/layout.js"></script>
+
+
+</html>

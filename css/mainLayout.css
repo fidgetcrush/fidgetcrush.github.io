@@ -1,0 +1,184 @@
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+
+/* REMOVE ME - dashed lines and height for debugging */
+/*
+#mainColumn {
+  outline: 1px dashed orange;
+  height: 200px;
+}
+*/
+/* Your css code here! */
+
+@font-face {
+
+  src : url("../fonts/Mix Doodle.ttf");
+  font-family: "MixDoodle";
+}
+
+body {
+	background: url(../image/back.png) top left;
+	background-repeat: repeat;
+	margin: 0px;
+	vertical-align: middle;
+
+	text-align: center;
+	font-family: "MixDoodle";
+}
+
+.container{
+	margin: 0 auto;
+}
+
+img {
+	/*
+	position: absolute;
+	*/
+}
+
+.candy-id{
+	position: absolute;
+}
+
+.title{
+	text-align: center;
+	margin: 5px;
+}
+
+.titleImg{
+	width: 320px;
+}
+
+.adlabel{
+	font-size: 10px;
+}
+
+.menu{
+	width: 320px;
+}
+
+.scoreBox{
+	width: 320px;
+	margin: 2px;
+	border-radius: 2px;
+	text-align: center;
+	padding-top:0px;
+	background-color: lightgrey;
+}
+
+.scoreLabel{
+	font-size: 20px;
+	/*
+	font-family: "MixDoodle";
+	*/
+}
+
+.candyBox{
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	border-radius: 3px;
+
+
+/*
+	box-shadow: 0px 0px 5px 2px #aaa inset;
+*/
+}
+
+.candyIcon{
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.btn {
+
+	margin: 5px;
+
+	/*
+	border: 1px solid #fff;
+	*/
+}
+
+.btn:active {
+	transform: scale(0.95);
+}
+
+.arrow {
+	margin: 0;
+	color: white;
+}
+
+.arrow:disabled {
+	background-color: grey;
+}
+
+.arrow:enabled {
+	background-color: #4889f0;
+}
+
+#firstColumn, #mainColumn, #lastColumn {
+	margin: auto;
+	padding: 10px;
+}
+
+#firstColumn {
+	z-index: 3;
+
+}
+
+#gameBoard {
+	z-index: 1;
+	margin: auto;
+	width: 320px;
+	height: 320px;
+	table-layout: fixed;
+	position: relative;
+}
+
+#moveInput {
+	width: 50px;
+}
+
+#moveInput:hover, #moveInput:focus {
+	box-shadow: 0 0 5px blue;
+}
+
+#arrowContainer {
+	margin: 20px auto;
+}
+
+#canvas {
+	z-index: 10;
+	position: absolute;
+	top: 10px;
+	
+	left: calc(50% - 160px);
+
+	opacity: 0.7;
+}
+
+#scoreLabel {
+	width: 10em;
+}
+
+#cover {
+	z-index: 2;
+	position: absolute;
+	
+	top: 0px;
+
+	left: calc(50% - 160px);
+
+	/*
+	background-color: white;
+	*/
+	width: 320px;
+	height: 500px;
+
+}
+
+#newGame, #showMove {
+	width: 10em;
+}

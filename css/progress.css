@@ -1,0 +1,54 @@
+* {
+margin: 0;
+padding: 0;
+border: 0
+}
+.container {
+margin: 2em
+}
+.progressBtn {
+position: relative;
+z-index: 0;
+background-color: rgba(255, 255, 255, 0);
+font-family: sans-serif;
+border: 0;
+padding: 0.5em;
+font-size: 1em;
+border-radius: 3px;
+color: #000000
+}
+.progressBtn .progress-bar {
+position: absolute;
+display: block;
+z-index: 6;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+padding: 0px;
+border-radius: 3px;
+background-color: rgba(180, 180, 180, 0.9);;
+}
+.progressBtn .progress-text {
+position: absolute;
+z-index: 5;
+display: none;
+top: 0;
+left: 0;
+padding: 0px;
+border-radius: 3px;
+background-color: rgba(255, 255, 255, 0);
+width: 100%;
+heigh: 100%;
+box-sizing: border-box
+}
+.progressBtn:hover {
+	/*
+	background-color: #ffc7b3
+	*/
+}
+.progressBtn:active {
+	/*
+	background-color: #a3cf00
+*/
+}
